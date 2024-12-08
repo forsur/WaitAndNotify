@@ -1,6 +1,6 @@
-package Producer;
+package WaitAndNotify.Producer;
 
-import Manager.Manager;
+import WaitAndNotify.Manager.Manager;
 
 public class Producer extends Thread{
     @Override
@@ -23,7 +23,7 @@ public class Producer extends Thread{
                 }else{
                     Manager.flag = 1;
                     Manager.lock.notifyAll();
-                    System.out.println("Producer's turn");
+                    System.out.println("WaitAndNotify.Producer's turn");
                 }
             }
         }

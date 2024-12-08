@@ -1,7 +1,7 @@
-// 存在 while(true) 循环，不会出现早期通知的问题
+package WaitAndNotify;// 存在 while(true) 循环，不会出现早期通知的问题
 
-import Consumer.Consumer;
-import Producer.Producer;
+import WaitAndNotify.Consumer.Consumer;
+import WaitAndNotify.Producer.Producer;
 
 public class Main {
     public static void main(String[] args) {

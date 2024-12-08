@@ -1,4 +1,4 @@
-package Manager;
+package WaitAndNotify.Manager;
 
 public class Manager {
     // 1 : consumer 执行

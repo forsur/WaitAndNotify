@@ -1,6 +1,6 @@
-package Consumer;
+package WaitAndNotify.Consumer;
 
-import Manager.Manager;
+import WaitAndNotify.Manager.Manager;
 
 public class Consumer extends Thread{
 
@@ -24,7 +24,7 @@ public class Consumer extends Thread{
                     }
                 }else{
                     Manager.count--;
-                    System.out.println("Consumer's turn " + Manager.count + " left ");
+                    System.out.println("WaitAndNotify.Consumer's turn " + Manager.count + " left ");
                     Manager.flag = 0;
                     // 通知 producer 进入就绪状态，等待锁和 cpu
                     Manager.lock.notifyAll(); // 退出同步代码块后才会放锁
