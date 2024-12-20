@@ -1,5 +1,7 @@
 package Application;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class ThreeAlternatedPrint {
 
     public static int count = 0;
@@ -23,7 +25,6 @@ public class ThreeAlternatedPrint {
         t2.start();
         t3.start();
     }
-
 
 
     public static class Task implements Runnable {
