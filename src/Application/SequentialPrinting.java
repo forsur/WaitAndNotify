@@ -24,7 +24,7 @@ public class SequentialPrinting {
         while(true)
         {
             synchronized (LOCK) {
-                if(count == 30){
+                if(count == 30) {
                     LOCK.notifyAll();
                     break;
                 }
@@ -35,7 +35,7 @@ public class SequentialPrinting {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                }else{ // 此处需要 else，防止被唤醒后继续执行
+                }else{
                     System.out.println(Thread.currentThread().getName() + " " + c);
                     turn = (turn + 1) % 3;
                     count++;
